@@ -71,15 +71,15 @@ const Auth = () => {
     return (
         <>
             <Head>
-                <title>Netflix - Login</title>
+                <title>Netflix - {variant === 'login' ? 'Login' : 'Signup'}</title>
             </Head>
             <div className="relative h-full w-full bg-[url('/images/hero.jpg')] bg-no-repeat bg-center bg-fixed bg-cover">
-                <div className="bg-black w-full h-full lg:bg-opacity-50">
+                <div className="bg-black w-full h-full bg-opacity-50">
                     <nav className="px-12 py-5">
                         <img src="/images/logo.png" className="h-12" alt="Logo" />
                     </nav>
                     <div className="flex justify-center">
-                        <div className="bg-black bg-opacity-70 px-16 py-16 self-center mt-2 lg:w-2/5 lg:max-w-md rounded-md w-full">
+                        <div className="bg-black bg-opacity-70 px-16 py-16 self-center mt-2 lg:w-2/5 md:w-3/5 sm:w-4/5 lg:max-w-md rounded-md w-full">
                             <h2 className="text-white text-4xl mb-8 font-semibold">
                                 {variant === 'login' ? 'Sign in' : 'Register'}
                             </h2>
